@@ -1,3 +1,12 @@
+https://raw.githubusercontent.com/yourusername/yourrepo/main/ruffle.wasm  
+```)    
+  
+---  
+  
+### 3️⃣ Final `index.html`  
+Replace the `wasm_path` with your raw link:  
+  
+```html  
 <!DOCTYPE html>  
 <html>  
 <head>  
@@ -23,9 +32,8 @@
   
   <script>  
     window.addEventListener("load", () => {  
-      // Initialize Ruffle and explicitly point to the WASM file  
       const ruffle = window.RufflePlayer.newest();  
-      ruffle.config = { wasm_path: "ruffle.wasm" };  
+      ruffle.config = { wasm_path: "https://raw.githubusercontent.com/yourusername/yourrepo/main/ruffle.wasm" };  
       const player = ruffle.createPlayer();  
       document.getElementById("game").appendChild(player);  
       player.load("run3.swf");  
