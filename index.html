@@ -24,7 +24,7 @@
   <script>  
     window.addEventListener("load", () => {  
       const ruffle = window.RufflePlayer.newest();  
-      ruffle.config = { wasm_path: "ruffle.wasm" }; // points to the WASM in the same folder  
+      ruffle.config = { wasm_path: "https://github.com/Poool1575339/Poool1575339/raw/refs/heads/main/ruffle.wasm" }; // points to the WASM in the same folder  
       const player = ruffle.createPlayer();  
       document.getElementById("game").appendChild(player);  
       player.load("run3.swf");  
